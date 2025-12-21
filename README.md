@@ -172,6 +172,7 @@ After working through this repository, you should be able to:
 ### Status
 
 🚧 **Foundational curriculum — actively used and iterated**
+
 This repository is part of a larger, evolving AI-for-data-science learning system.
 
 ---
