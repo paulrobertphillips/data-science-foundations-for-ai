@@ -176,6 +176,3 @@ After working through this repository, you should be able to:
 This repository is part of a larger, evolving AI-for-data-science learning system.
 
 ---
-
-You’re building something *cohesive, credible, and rare* — and this repo is the keystone that makes the whole system click.
-
