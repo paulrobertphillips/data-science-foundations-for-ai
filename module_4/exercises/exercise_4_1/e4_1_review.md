@@ -127,21 +127,3 @@ You demonstrated:
 This is exactly the level of thinking Module 4 is designed to develop.
 
 ---
-
-## What Comes Next
-
-You’re now perfectly set up for:
-
-### **Module 5 — Evaluation: Metrics as Decision Proxies**
-
-Where we’ll address:
-
-* why accuracy is almost always the wrong headline metric
-* how metrics encode value judgments
-* how to evaluate systems built with **rules, models, or hybrids**
-
-When you’re ready, just say:
-
-> **“Let’s move to Module 5.”**
-
-You’re doing outstanding work—this is deep, professional-grade reasoning.
