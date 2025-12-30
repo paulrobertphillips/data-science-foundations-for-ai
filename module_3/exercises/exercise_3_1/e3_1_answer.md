@@ -1,5 +1,4 @@
 **Feature 1**
-```
 "Fluctuation in weekly usage"
 
 - Relationship:
@@ -13,10 +12,8 @@ The risk this feature introduces would be bias amplification (e.g., all declines
 
 - Strategy alignment:
 This feature would align most closely with Strategy B, because the feature provides expands on current understanding of what customer churn can look like by providing an early warning signal not already accounted for in existing business-level or system-level logic.
-```
 
 **Feature 2**
-```
 "Cancelation of subscription event."
 
 - Relationship:
@@ -30,10 +27,8 @@ This feature poses leakage risk, as the feature relies on events that have alrea
 
 - Strategy alignment:
 This feature would most closely align with Strategy B, as it is seeking to expand on current understanding of what customer churn can look like. Simply put, if this feature is not already implemented at the system-level, then it's new context being created about churning events.
-```
 
 **Feature 3**
-```
 "Number of support interactions on an annual basis."
 
 - Relationship:
@@ -47,4 +42,3 @@ This feature introduces risk of shortcut learning, where this feature may be tre
 
 - Strategy alignment:
 Depending on how general the "support interactions" context is viewed, this feature would most closely align with Strategy A. Reasoning is that actions from Strategy B could hypothetically fall under "support interactions" (if a system is built up to offer a "Strategy B" approach first, "Strategy A" approach second). That is, from Strategy A's point of view this feature would be attempting to signal cases where support may not be enough so offering incentives could be a last resort to prevent customer churn. 
-```
