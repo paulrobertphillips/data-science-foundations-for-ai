@@ -1,0 +1,20 @@
+**Step 1 — Decision summary**
+The decision being supported by this system is determining which customers should receive early human outreach due to elevated churn risk. Deploying this decision is risky as it will impact real customer experience, incur costs, and is viewed as being partially reverisible (outreach cannot be undone).
+
+**Step 2 — Readiness assessment**
+1. **Decision readiness: (Ready)** — The decision being supported is clearly stated along with cost of being wrong, the decision owner is explicitly named (e.g., customer success leadership), and the decision reversibility is also clearly outlined. The system described is intended to support a decision, not developing a model for insights.
+
+2. **Data & assumption readiness: (Partially Ready)** — All major data sources have been documented and are defensible for use in decision system. Known data limitations are stated (example: churn label delay acknowledged). Key assumptions are clearly outlined under "Uncertainty & Cleaning Approach" as well as "Representation & Features" documentation. It is clear what the data does represent and what it does not. Label construction/trustworthiness are not explicitly discussed however.
+
+3. **Pipeline coherence: (Ready)** — Cleaning strategy aligns with the decision's risk profile since. Data sources selected, cleaned, and feature engineered all align with the decision framing for the system since focus is on amplifying sensitivity to short-term anomalies. Modeling approach satisfies decision constraints since class being used focuses on flexibility (sensitivty to short-term volatility). Human review is required before outreach occurs which means solution directly addresses risks of adversely impacting customer experience, incurring unnecessary costs, and creating stakeholder distrust. Evaluation metrics reflect real-world consequences by prioritizing customer annoyance over missed churn opportunities, and considering cross-customer cohort coverage as well as time to when customers are contacted. Thresholding is capacity-constrained and tuned to surface more cases than CS can act on directly, which further compliments the system's decision framing. In summary, there are no present pipeline steps that contradict earlier assumptions made.
+
+4. **Human oversight readiness: (Partially Ready)** — Human review checkpoints are clearly defined. System is designed to support customer success team review of accounts flagged for early warning signs of customer churn without making automatic irreversible or policy decisions. Since CS makes the final call for intervention, decisions are clearly human-owned. It is not made clear however when the system should not be trusted.
+
+5. **Failure awareness: (Not Ready)** — There is no documentation of plausible failure scenarios or silent failure modes documented. The team is likely not to know how failure would first appear, since: 1) label construction/trustworthiness is not documented & 2) it is not clear when the system itself should or should not be trusted. Risks are consciously accepted by CS, but it is not clearly stated who absorbs cost when things go wrong. Right now it's assumed to be CS since the system is designed to have the team make the final call.
+
+**Step 3 — Go / No-Go call**
+**Decision:** No Go
+**Justification:** Since there is no mandate to deploy the system in a production environment, the team should take the time to properly address the identified gaps in documentation before pushing to production. The project is at a stage where it'll be much easier to address these gaps before they become serious issues after deployment. Since failure awareness documentation is entirely absent, trust erosion of the system would be at high risk, even if this were to be implemented in controlled environment with a test group. Users would have no idea when system outcome should or should not be trusted, so would likely default to not trusting the outcome at all.
+
+**Step 4 — Primary readiness gap**
+The single most important gap preventing readiness is failure awareness.
