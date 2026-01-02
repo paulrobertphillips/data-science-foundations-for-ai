@@ -23,12 +23,12 @@
   - Hidden failure: Increased misprioritized for inspections or maintenance when in fact they may need require such.
 
 **3. Threshold strategy**
-- Strategy:
-- Constraint enforced:
-- Risk accepted:
+- Strategy: Capacity-constrained thresholding
+- Constraint enforced: Threshold set so actions do not exceed operational limits.
+- Risk accepted: Tuned to surface more cases than human engineers can act on directly.
 
 **4. Explicitly rejected options**
 - Rejected metric: Precision
   - Reason: We explicitly reject precision because the decision system's strategy seeks to increase sensitivity to early warning asset inspection & maintenance signals. Due to this, the model accepts increased error in misprioritizing asset inspection and maintenance servicing over missing asset inspection and maintenance servicing opportunities.
-- Rejected threshold strategy:
-  - Reason:
+- Rejected threshold strategy: Cost-based thresholding
+  - Reason: Minimizing expected cost directly contradicts the decision system's design.
