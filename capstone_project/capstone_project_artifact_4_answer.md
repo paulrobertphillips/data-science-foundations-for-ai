@@ -1,17 +1,18 @@
 Capstone — Artifact 4
 
 1. Decision summary:
+The decision being supported by this system is determining which assets should receive proactive inspection or maintenance in the next planning window, given limited capacity and uncertainty about whether observed signals indicate true failure risk or temporary anomalies. Deploying this decision is risky as it will impact the organization's annual planning, budget, and resources, which means decision outcome is irreversible.
 
 2. Readiness assessment:
-1. Decision readiness: (Ready / Partially Ready / Not Ready) — …
-2. Data & assumption readiness: — …
-3. Pipeline coherence: — …
-4. Human oversight readiness: — …
-5. Failure awareness: — …
+1. Decision readiness: (Ready) — The decision being supported is clearly stated and the decision owner, the engineering team, is also explicitly stated. The cost of being wrong is understood and documented (e.g., incurring cost of unnecessary proactive inspection and maintenance servicing is considered acceptable). Decision reversibility is clearly outlined, and the system described is intended to support decision-making, not developing a model for insights.
+2. Data & assumption readiness: (Ready) — All major data sources have been documented and are defensible for use in decision system. Known data limitations are acknowledged, label construction and trustworthiness is are also explicitly discussed. Key assumptions (and assumption break points) are written down. What the data does not represent is also documented (e.g., no signal is considered "ground truth").
+3. Pipeline coherence: (Ready) — Cleaning strategy aligns with decision's risk profile. Strategy accepts messiness to avoid false certainty, which is required for an early warning detection system. Feature representations reflect intended behavior signals by focusing on shorter window signal changes. The chosen rule-based decision mechanism satisfies decision constraints by acknowledging combined risk of weak signals and trust erosion makes probabilistic reasoning not feasible for this decision system. Evaluation metrics reflect real-world consequences by: prioritizing increased proactive inspection and maintenance activity over missing intervention opportunities, accepting noisier signals for broader representation of asset types, and earlier identification of emerging asset risk over long delays between risk emergence and inspection prioritization. Thresholding is capacity-constrained and tuned to relatively prioritize more cases than human engineers can act on directly. In summary, there are no present pipeline steps that contradict earlier assumptions made.
+4. Human oversight readiness: (Ready) — Human review checkpoints are clearly defined. System is designed to support human engineering team's relative prioritization of proactive asset inspection and maintenance without making automatic irreversible or policy decisions. Since the engineering team makes the final call for intervention, decisions are clearly human-owned. It is also clear the decision system is directional, not prescriptive.
+5. Failure awareness: (Partially Ready) — Plausible failure scenarios have been documented at each review checkpoint in the decision system pipeline. Silent failure modes have been explicitly discussed in the data trust boundaries, cleaning strategy, representation, decision mechanism, as well as evaluation and thresholding stages. This means the team is aware of how failure would first appear. Risks have also been documented through decision system and have been consciously accepted by stakeholders. It's not clearly stated however who absorbs cost when things go wrong. Right now, it's assumed to be the engineering team since the system is designed to have the team make the final call.
 
 3. Go / No-Go call:
-Decision:
-Justification:
+Decision: Go
+Justification: All readiness assessment checkpoints pass as "ready" with the exception of failure awareness being marked as "partially ready". There is nothing fundamentally preventing this decision system from being deployed, but it is recommended that cost absorbtion is clearly stated prior to moving the solution into production.
 
 4. Primary readiness gap:
-…
+The single most important gap preventing readiness is failure awareness.
