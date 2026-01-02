@@ -54,21 +54,21 @@ Together, they form a continuous, decision-first learning path.
 
 ---
 
-### Audience
+## Who This Is For / Who This Is Not For
 
-This material is designed for:
+### This repository is for:
+- Data scientists, analysts, and engineers who want to design **decision-first** data science systems
+- Practitioners who care about **risk, assumptions, and human accountability**, not just model performance
+- Teams exploring **human–AI collaboration** rather than full automation
+- Learners transitioning from academic or model-centric training into real-world decision systems
 
-* Data scientists
-* Data engineers
-* Applied researchers
-* AI practitioners working in scientific, policy, or decision-support contexts
+### This repository is not for:
+- Step-by-step tutorials on building or deploying models
+- Code-first or tool-specific machine learning guides
+- “Best algorithm” comparisons or performance benchmarks
+- Production recipes, MLOps frameworks, or automation playbooks
 
-Especially relevant if you:
-
-* Collaborate with LLMs or agentic systems
-* Work on complex analytical pipelines
-* Need to justify modeling decisions to stakeholders
-* Transition research-grade work into production environments
+The focus here is **how to reason about data science decisions**, not how to implement a specific technical stack.
 
 ---
 
@@ -171,8 +171,28 @@ After working through this repository, you should be able to:
 
 ### Status
 
-🚧 **Foundational curriculum — actively used and iterated**
+🚧 **Foundational curriculum — stable structure, evolving content**
 
 This repository is part of a larger, evolving AI-for-data-science learning system.
+
+---
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+You are free to use, modify, and redistribute this code under the terms of the GPL-3.0.
+See the `LICENSE` file for full details.
+
+---
+
+## Disclaimer
+
+The materials in this repository represent **one decision-first approach** to designing and reviewing data science systems.
+
+They are intended to be **illustrative, not prescriptive**, and should be adapted to local context, domain constraints, organizational risk tolerance, and stakeholder needs.
+
+Examples, scenarios, and reviews are deliberately abstracted and generalized.  
+They are not intended to reflect any specific organization, system, or proprietary workflow.
 
 ---
