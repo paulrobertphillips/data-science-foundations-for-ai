@@ -1,5 +1,7 @@
 # Data Science Foundations for AI
 
+Co-Author: OpenAI's GPT-5.1
+
 **How AI Thinks About Data, Models, and Decisions**
 
 ---
